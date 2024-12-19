@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Lover Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Tea Lover Survey Form</h1>
+    <p id="description">Thanks for purchasing from our store! Please tell us about your experience.</p>
+    <fieldset>
+      <form id="survey-form">
+        <label for="name" id="name-label">Enter your name: 
+          <input id="name" type="text" placeholder="e.g. Max" required />
+        </label>
+        <label for="email" id="email-label">Enter your email: 
+          <input id="email" type="email" placeholder="e.g. tea-lover@gmail.com" required />
+        </label>
+        <label for="number" id="number-label">Enter your age: 
+          <input id="number" type="number" min="13" max="120" placeholder="e.g. 21" />
+        </label>
+        <label for="dropdown"> Where did you shop? 
+          <select id="dropdown">
+            <option>select one</option>
+            <option>Online</option>
+            <option>In-store</option>
+          </select>
+        </label>
+        <p>Would you shop from us again?</p>
+        <label for="absolutely">Absolutely 
+          <input id="absolutely" type="radio" name="options" value="1" class="inline" checked>
+        </label>
+        <label for="not-likely">Not likely 
+          <input id="not-likely" type="radio" name="options" value="2" class="inline">
+        </label>
+        <label for="maybe">Maybe 
+          <input id="maybe" type="radio" name="options" value="3" class="inline">
+        </label>
+        <p>Which one is your favourite tea blend?</p>
+        <label for="sunrise">
+          <input type="checkbox" value="1"> Sunrise
+        </label>
+        <label for="petal">
+          <input type="checkbox" value="2"> Petal
+        </label>
+        <label for="zestful">
+          <input type="checkbox" value="3"> Zest
+        </label>
+        <label for="energlow">
+          <input type="checkbox" value="4"> Energy
+        </label>
+        <label for="sunset">
+          <input type="checkbox" value="5"> Sunset
+        </label>
+        <p>Would you like to add anything else?</p>
+        <textarea id="text-area"></textarea>
+        <label for="submit">
+          <input type="submit" id="submit" value="Submit">
+        </label>
+      </form>
+    </fieldset>
+  </body>
+</html>
